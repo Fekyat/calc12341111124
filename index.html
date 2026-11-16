@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Цена геймпасса</title>
+<meta name="description" content="Сколько робуксов вы хотите получить и на какую сумму ставить геймпасс с учётом комиссии Roblox 30%.">
+<meta name="theme-color" content="#000000">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23ffffff' fill-rule='evenodd' d='M13.876 2.834A3.18 3.18 0 0 1 15.5 5.592v4.815c0 1.138-.62 2.19-1.624 2.758l-4.253 2.408a3.3 3.3 0 0 1-3.247 0l-4.253-2.408A3.17 3.17 0 0 1 .5 10.407V5.592c0-1.137.619-2.19 1.623-2.758L6.376.427A3.3 3.3 0 0 1 9.623.427ZM6.125 9.84h3.75V6.163h-3.75Z'/%3E%3C/svg%3E">
+<link rel="preload" href="./fonts/montserrat-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="./fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<div class="backdrop" aria-hidden="true">
+  <div class="glow glow--a"></div>
+  <div class="glow glow--b"></div>
+  <div class="ambient"></div>
+  <div class="vignette"></div>
+</div>
+
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+  <symbol id="i-robux" viewBox="0 0 16 16"><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M13.876 2.834A3.18 3.18 0 0 1 15.5 5.592v4.815c0 1.138-.62 2.19-1.624 2.758l-4.253 2.408a3.3 3.3 0 0 1-3.247 0l-4.253-2.408A3.17 3.17 0 0 1 .5 10.407V5.592c0-1.137.619-2.19 1.623-2.758L6.376.427A3.3 3.3 0 0 1 9.623.427ZM6.946 1.52 2.804 3.864a2.06 2.06 0 0 0-1.054 1.79v4.69a2.06 2.06 0 0 0 1.054 1.79l4.142 2.346c.652.37 1.455.37 2.108 0l4.142-2.344a2.06 2.06 0 0 0 1.054-1.79v-4.69a2.06 2.06 0 0 0-1.054-1.79L9.054 1.517a2.14 2.14 0 0 0-2.108 0m1.92 1.31 3.268 1.85c.535.304.866.865.866 1.472v3.7c0 .607-.33 1.168-.866 1.471l-3.268 1.85a1.76 1.76 0 0 1-1.732 0l-3.268-1.85A1.69 1.69 0 0 1 3 9.851v-3.7c0-.607.33-1.168.866-1.471l3.268-1.85a1.76 1.76 0 0 1 1.732 0M6.125 9.84h3.75V6.163h-3.75Z"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11.5" height="11.5" rx="3"/><path d="M5.5 15h-1A1.5 1.5 0 0 1 3 13.5v-9A1.5 1.5 0 0 1 4.5 3h9A1.5 1.5 0 0 1 15 4.5v1"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m4.5 12.5 5 5 10-11"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6.5 9.5 5.5 5.5 5.5-5.5"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6.5-6.5L19 12l-6.5 6.5"/></symbol>
+  <symbol id="i-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3.5h6.5V10m0-6.5L11 13"/><path d="M18.5 14.5v4a2 2 0 0 1-2 2h-11a2 2 0 0 1-2-2v-11a2 2 0 0 1 2-2h4"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.75"/><path d="M12 7.5v5.75m0 3.25h.01"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M7.5 4.8v14.4L19.5 12z" fill="currentColor" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M8.5 5v14M15.5 5v14"/></symbol>
+  <symbol id="i-restart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.6-5.9"/><path d="M20 4v4.6h-4.6"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="16.5" r="4"/><path d="m10.5 13.5 9-9"/><path d="m16 8 2.5 2.5"/><path d="m13.5 10.5 2 2"/></symbol>
+</svg>
+
+<main class="page">
+
+  <section class="calc">
+    <h1 class="q rise" style="--d:0ms"><label for="amount">Сколько робуксов вы хотите</label></h1>
+
+    <div class="entry rise" style="--d:70ms" id="amountWrap">
+      <input id="amount" class="entry__input" type="text" inputmode="numeric" autocomplete="off"
+             spellcheck="false" maxlength="11" placeholder="1000" aria-describedby="amountHint">
+      <span class="entry__line" aria-hidden="true"></span>
+    </div>
+    <p class="err" id="amountHint" role="alert"></p>
+
+    <div class="presets rise" style="--d:140ms" role="group" aria-label="Частые суммы">
+      <button class="preset" type="button" data-amount="100">100</button>
+      <button class="preset" type="button" data-amount="500">500</button>
+      <button class="preset" type="button" data-amount="1000">1 000</button>
+      <button class="preset" type="button" data-amount="5000">5 000</button>
+      <button class="preset" type="button" data-amount="10000">10 000</button>
+    </div>
+
+    <div class="cut rise" style="--d:210ms"><span>комиссия roblox 30%</span></div>
+
+    <h2 class="q rise" style="--d:280ms">Ставьте геймпасс на данную сумму</h2>
+
+    <div class="result rise" style="--d:350ms" id="result">
+      <div class="result__halo" aria-hidden="true"></div>
+      <button class="price" id="price" type="button" disabled aria-label="Цена геймпасса не рассчитана"><span class="price__digits" id="priceDigits"></span><span class="price__ripple" id="ripple" aria-hidden="true"></span></button>
+    </div>
+
+    <p class="tap rise" style="--d:420ms" id="tapHint">нажмите на число, чтобы скопировать</p>
+
+    <p class="tally rise" style="--d:490ms" id="tally"></p>
+    <p class="fine rise" style="--d:560ms" id="fine" hidden>выключите managed pricing</p>
+    <p class="sr-only" id="live" role="status" aria-live="polite"></p>
+
+    <div class="server-status" id="serverStatus" hidden>
+      <p role="status">Сервер сейчас недоступен. Расчёт цены и инструкции работают, но поиск геймпассов и создание ID временно недоступны.</p>
+      <button class="server-status__retry" id="serverRetry" type="button">Проверить связь</button>
+    </div>
+
+    <div class="rise" style="--d:630ms">
+      <div class="opens">
+        <button class="disclose" id="finderToggle" type="button" aria-expanded="false" aria-controls="finder">
+          <span>Найти мои геймпассы</span>
+          <svg class="disclose__chevron" width="16" height="16" aria-hidden="true"><use href="#i-chevron"/></svg>
+        </button>
+        <button class="disclose" id="guideToggle" type="button" aria-expanded="false" aria-controls="guide">
+          <span>Как поставить цену</span>
+          <svg class="disclose__chevron" width="16" height="16" aria-hidden="true"><use href="#i-chevron"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div class="reveal" id="finderReveal">
+    <div class="reveal__inner">
+      <section class="finder" id="finder" aria-labelledby="finderTitle" inert>
+        <h2 class="sr-only" id="finderTitle">Поиск геймпассов</h2>
+
+        <div class="target" id="target" hidden>
+          <span class="target__label">нужно</span>
+          <strong class="target__value" id="targetValue"></strong>
+          <button class="mini" id="targetCopy" type="button" aria-label="Скопировать нужную цену">
+            <svg width="14" height="14" aria-hidden="true"><use href="#i-copy"/></svg>
+          </button>
+        </div>
+
+        <form class="lookup" id="lookupForm" novalidate>
+          <div class="lookup__row">
+            <input id="nick" class="nick" type="text" autocomplete="off" spellcheck="false"
+                   autocapitalize="none" maxlength="20" placeholder="Ваш ник в Roblox" aria-label="Ваш ник в Roblox" aria-describedby="nickHint">
+            <button class="go" id="lookupBtn" type="submit" aria-label="Найти">
+              <svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </button>
+          </div>
+          <p class="err" id="nickHint" role="alert"></p>
+        </form>
+
+        <nav class="crumbs" id="crumbs" aria-label="Шаги поиска" hidden>
+          <button class="crumb" id="crumbUser" type="button"></button>
+          <span class="crumbs__sep" id="crumbSep" hidden aria-hidden="true">/</span>
+          <button class="crumb" id="crumbGame" type="button" hidden></button>
+        </nav>
+
+        <div class="results" id="results"></div>
+        <div class="order" id="orderPanel" hidden></div>
+      </section>
+    </div>
+  </div>
+
+  <div class="reveal" id="guideReveal">
+    <div class="reveal__inner">
+      <section class="guide" id="guide" aria-labelledby="guideTitle" inert>
+        <h2 class="sr-only" id="guideTitle">Как создать геймпасс и поставить цену</h2>
+
+        <div class="gtabs" role="tablist" aria-label="Шаги инструкции">
+          <button class="gtab is-active" id="gtabCreate" role="tab" aria-selected="true" aria-controls="stage" type="button">1 · Создать геймпасс</button>
+          <button class="gtab" id="gtabSales" role="tab" aria-selected="false" aria-controls="stage" type="button">2 · Обновить цену</button>
+        </div>
+
+        <div class="stage" id="stage">
+          <div class="stage__fit" id="stageFit">
+
+            <div class="mock" id="mockCreate" aria-hidden="true">
+              <aside class="mock__side">
+                <div class="mock__brand">Creator Dashboard</div>
+                <nav class="mock__nav">
+                  <span>Overview</span><span>Configure</span>
+                  <span class="mock__group">Monetization</span>
+                  <span class="mock__sub">Developer Products</span>
+                  <span class="mock__sub is-active" id="cvNav">Passes</span>
+                  <span class="mock__sub">Avatar Items</span>
+                  <span class="mock__sub">Subscriptions</span>
+                  <span>Activity History</span><span>Audience</span><span>Engagement</span><span>Promotion</span>
+                </nav>
+              </aside>
+              <div class="mock__main">
+                <div class="mock__view" id="cvList">
+                  <h3>Passes</h3>
+                  <div class="mock__tabs"><span class="is-active">Creations</span><span>Analytics</span></div>
+                  <div class="mock__empty">
+                    <p>You haven't created any Passes</p>
+                    <span class="mock__btn mock__btn--primary" id="cvOpen">Create Pass</span>
+                  </div>
+                </div>
+                <div class="mock__view" id="cvForm" hidden>
+                  <h3>Create A Pass</h3>
+                  <div class="mock__upload">
+                    <span class="mock__thumb"><svg width="20" height="20"><use href="#i-robux"/></svg></span>
+                    <span class="mock__uploadtext"><span class="mock__btn mock__btn--sm">Change</span><em>Format: *.jpg, *.png, *.bmp</em></span>
+                  </div>
+                  <span class="mock__label">Name *</span>
+                  <span class="mock__field" id="cvNameField"><span id="cvName"></span><i class="mock__caret"></i></span>
+                  <p class="mock__note">Up to 50 characters</p>
+                  <span class="mock__label">Description</span>
+                  <span class="mock__field mock__field--area" id="cvDesc"></span>
+                  <p class="mock__note">Up to 1000 characters</p>
+                  <div class="mock__foot">
+                    <span class="mock__btn">Cancel</span>
+                    <span class="mock__btn mock__btn--primary" id="cvSave">Create pass</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mock" id="mockSales" aria-hidden="true" hidden>
+              <aside class="mock__side">
+                <div class="mock__brand">Game Pass</div>
+                <nav class="mock__nav"><span>Basic Settings</span><span class="is-active">Sales</span><span>Advertise</span></nav>
+              </aside>
+              <div class="mock__main">
+                <h3>Sales</h3>
+                <div class="mock__row">
+                  <span class="mock__label">Price *</span>
+                  <span class="mock__toggle" id="svSale"><i></i></span>
+                  <span class="mock__tlabel">Item for sale</span>
+                </div>
+                <div class="mock__price is-off" id="svPriceWrap">
+                  <svg width="15" height="15"><use href="#i-robux"/></svg>
+                  <span class="mock__field mock__field--price" id="svPriceField"><span id="svPrice"></span><i class="mock__caret"></i></span>
+                </div>
+                <div class="mock__row">
+                  <span class="mock__label">Managed pricing</span>
+                  <span class="mock__toggle is-on" id="svRegional"><i></i></span>
+                  <span class="mock__tlabel" id="svRegionalLabel">Enabled</span>
+                </div>
+                <div class="mock__foot">
+                  <span class="mock__btn">Cancel</span>
+                  <span class="mock__btn mock__btn--primary is-disabled" id="svSave">Save Changes</span>
+                </div>
+                <div class="mock__modal" id="svModal" hidden>
+                  <div class="mock__dialog">
+                    <h4>Turn off managed pricing on this item?</h4>
+                    <p>This item will no longer be price optimized.</p>
+                    <div class="mock__check"><i></i>Don't show this message again</div>
+                    <div class="mock__foot">
+                      <span class="mock__btn mock__btn--danger" id="svTurnOff">Turn off</span>
+                      <span class="mock__btn">Cancel</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <span class="cursor" id="cursor"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M5 3l14 8.5-6.2 1.4L9.6 19z" fill="#fff" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/></svg></span>
+            <span class="clickring" id="clickring"></span>
+          </div>
+        </div>
+
+        <p class="caption" id="caption" role="status" aria-live="polite"></p>
+
+        <div class="player">
+          <button class="player__btn" id="playBtn" type="button" aria-label="Пауза"><svg width="15" height="15" aria-hidden="true"><use href="#i-pause" id="playIcon"/></svg></button>
+          <button class="player__btn" id="restartBtn" type="button" aria-label="Показать заново"><svg width="15" height="15" aria-hidden="true"><use href="#i-restart"/></svg></button>
+          <div class="player__dots" id="dots"></div>
+          <span class="player__count" id="stepCount"></span>
+        </div>
+
+        <ol class="steps" id="steps" hidden></ol>
+      </section>
+    </div>
+  </div>
+
+</main>
+
+<script src="./app.js" defer></script>
+</body>
+</html>
