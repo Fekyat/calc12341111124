@@ -377,7 +377,7 @@ const apiOrigin = configuredApi && !['localhost', '127.0.0.1', '[::1]'].includes
 // Free tunnel hosts interpose a browser warning page unless the fetch opts out.
 function tunnelHeaders(hostname) {
   if (hostname.endsWith('.loca.lt')) return { 'bypass-tunnel-reminder': 'true' };
-  if (['.ngrok-free.app', '.ngrok.io', '.ngrok.app', '.ngrok.dev'].some((suffix) => hostname.endsWith(suffix))) {
+  if (['.ngrok-free.app', '.ngrok-free.dev', '.ngrok.io', '.ngrok.app', '.ngrok.dev'].some((suffix) => hostname.endsWith(suffix))) {
     return { 'ngrok-skip-browser-warning': 'true' };
   }
   return {};
