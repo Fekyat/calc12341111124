@@ -370,14 +370,30 @@ finderToggle.addEventListener('click', () => {
 const serverStatus = $('serverStatus');
 const serverRetry = $('serverRetry');
 let healthPending = false;
+const configuredApi = document.querySelector('meta[name="api-base"]')?.content || '';
+const apiOrigin = configuredApi && !['localhost', '127.0.0.1', '[::1]'].includes(location.hostname)
+  ? new URL(configuredApi).origin : location.origin;
+
+// Free tunnel hosts interpose a browser warning page unless the fetch opts out.
+function tunnelHeaders(hostname) {
+  if (hostname.endsWith('.loca.lt')) return { 'bypass-tunnel-reminder': 'true' };
+  if (['.ngrok-free.app', '.ngrok.io', '.ngrok.app', '.ngrok.dev'].some((suffix) => hostname.endsWith(suffix))) {
+    return { 'ngrok-skip-browser-warning': 'true' };
+  }
+  return {};
+}
 
 async function requestJson(url, options = {}, timeout = 35000) {
+  const source = new URL(url, location.origin);
+  const endpoint = new URL(source.pathname + source.search, apiOrigin);
   let response;
   let payload;
   try {
-    response = await fetch(url, {
+    response = await fetch(endpoint, {
       ...options,
-      headers: { Accept: 'application/json', ...options.headers },
+      headers: { Accept: 'application/json', ...tunnelHeaders(endpoint.hostname), ...options.headers },
+      credentials: 'omit',
+      redirect: 'error',
       cache: 'no-store',
       signal: AbortSignal.timeout(timeout),
     });
